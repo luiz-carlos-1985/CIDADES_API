@@ -1,6 +1,6 @@
 # CIDADES_API
 
-## API Rest de consulta de cidades do Brasil
+## API REST QUE CONSULTA E CALCULA A DISTÂNCIA ENTRE DUAS CIDADES DO BRASIL DE ACORDO COM A SOLICITAÇÃO DO FRONTEND.
 
 ## Requisitos
 * Linux 
