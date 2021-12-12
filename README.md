@@ -9,9 +9,13 @@
 ## Base de dados
 ### Postgres
 * [Postgres Docker Hub] (https://hub.docker.com/_/postgres)
-```script de shell docker run --name cities-db -d -p 5432: 5432 -e POSTGRES_USER = postgres_user_city -e POSTGRES_PASSWORD = super_password -e POSTGRES_DB = cidades postgres
+```
+Script de Shell
 
-script de shell
+docker run --name cities-db -d -p 5432: 5432 -e POSTGRES_USER = postgres_user_city -e POSTGRES_PASSWORD = super_password -e POSTGRES_DB = cidades postgres
+
+Script de Shell
+
 cd ~ / workspace / sql-countries-states-cities / PostgreSQL
 docker run -it --rm --net = host -v $ PWD: / tmp postgres / bin / bash
 psql -h localhost -U postgres_user_city cities -f /tmp/pais.sql psql -h localhost -U postgres_user_city cities -f /tmp/state.sql psql -h localhost -U postgres_user_city cities -f /tmp/cidade.sql psql -h localhost -U postgres_user_city cities
@@ -69,5 +73,5 @@ select earth_distance(
 ### Types
 
 * [JsonTypes](https://github.com/vladmihalcea/hibernate-types)
-* UserType](https://docs.jboss.org/hibernate/orm/3.5/api/org/hibernate/usertype/UserType.html)
+* [UserType](https://docs.jboss.org/hibernate/orm/3.5/api/org/hibernate/usertype/UserType.html)
 
