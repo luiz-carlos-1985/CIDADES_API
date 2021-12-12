@@ -4,7 +4,7 @@
 * Linux 
 * Java 8
 * Docker 
-*IntelliJ
+* IntelliJ
 
 ## Base de dados
 ### Postgres
