@@ -11,7 +11,7 @@
 * [Postgres Docker Hub] (https://hub.docker.com/_/postgres)
 ```script de shell docker run --name cities-db -d -p 5432: 5432 -e POSTGRES_USER = postgres_user_city -e POSTGRES_PASSWORD = super_password -e POSTGRES_DB = cidades postgres
 
-```script de shell
+script de shell
 cd ~ / workspace / sql-countries-states-cities / PostgreSQL
 docker run -it --rm --net = host -v $ PWD: / tmp postgres / bin / bash
 psql -h localhost -U postgres_user_city cities -f /tmp/pais.sql psql -h localhost -U postgres_user_city cities -f /tmp/state.sql psql -h localhost -U postgres_user_city cities -f /tmp/cidade.sql psql -h localhost -U postgres_user_city cities
@@ -28,7 +28,7 @@ CREATE EXTENSION earthdistance;
 
 ### Acesso
 ```script de shell docker exec -it cities-db / bin / bash
- psql -U postgres_user_city cities ```
+ psql -U postgres_user_city cities
 
 ### Consultar distância da Terra
 point
@@ -46,7 +46,6 @@ select earth_distance(
 ## Spring Boot
 
 * [https://start.spring.io/](https://start.spring.io/)
-
 + Java 8
 + Gradle Project
 + Jar
