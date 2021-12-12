@@ -27,17 +27,21 @@ CREATE EXTENSION earthdistance;
 * [datatype-geometric](https://www.postgresql.org/docs/current/datatype-geometric.html)
 
 ### Acesso
-```script de shell docker exec -it cities-db / bin / bash
- psql -U postgres_user_city cities
+```
+script de shell docker exec -it cities-db / bin / bash
+psql -U postgres_user_city cities
+```
 
 ### Consultar distância da Terra
 point
-```roomsql
+```
+roomsql
 select ((select lat_lon from city where id = 4929) <@> (select lat_lon from city where id=5254)) as distance;
 ```
 
 cube
-```roomsql
+```
+roomsql
 select earth_distance(
     ll_to_earth(-21.95840072631836,-47.98820114135742),
     ll_to_earth(-22.01740074157715,-47.88600158691406)
